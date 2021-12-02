@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Start Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <script src="Kwitter.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Start.html">Home</a></li>
+        <li><a href="Kwitter_Room.html">Rooms</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Start.html"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="col-sm-8 text-left"> 
+        <center> 
+            <h1 style="color: aliceblue;">Start Up
+            <sup>
+                <img src="Chat_Button.gif" width="50" height="50">
+            </sup>
+          </h1>
+        </center>
+      <p style="color: aliceblue;">The expression online chat comes from the word chat which means "informal conversation". Online chat includes web-based applications that allow communication – often directly addressed, but anonymous between users in a multi-user environment.</p>
+      <hr>
+      <center>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+        <img src="Chat_Button.gif" class="logo">
+            <h3 style="color: aliceblue;" >See what is happening in the School right now</h3>
+            <h4 style="color: aliceblue;">Join Start Up today</h4>
+            <div class="form-group">
+            <label style="color: aliceblue;">For Students: Make a user Name as Class(any)_Name </label>
+            <label style="color: aliceblue;">For Teachers:  Make a user Name as Class(any)_Subject_Name </label>
+            <br>
+              <label style="color: aliceblue;">User Name:</label>
+              <input style="color: rgb(80, 5, 15);" type="text" id="user_name" class="form-control" placeholder="User Name">
+            </div>
+            <button style="color: aliceblue;" onclick="addUser()" id="login_button" class="btn btn-primary">Log in</button>
+            <br><br>
+        </div>
+    </center>
+        </div>
+    </div>
+</body>
+</html>
